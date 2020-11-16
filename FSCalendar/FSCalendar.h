@@ -253,6 +253,11 @@ IB_DESIGNABLE
 @property (weak, nonatomic) IBOutlet id<FSCalendarDataSource> dataSource;
 
 /**
+ * The timezone of the calendar. `localTimeZone` by default.
+ */
+@property (strong, nonatomic) NSTimeZone *timeZone;
+
+/**
  * A special mark will be put on 'today' of the calendar.
  */
 @property (nullable, strong, nonatomic) NSDate *today;
